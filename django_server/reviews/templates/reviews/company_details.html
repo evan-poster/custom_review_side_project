@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h1>{{ company.name }}</h1>
+	
+	<p>{{ company.description }}</p>
+	
+	<p>Address: {{ company.address }}</p>
+	
+	<p>Phone Number: {{ company.phone_number }}</p>
+
+	<h2>Reviews:</h2>
+	
+	{% for review in reviews %}
+		<p>{{ review.user.username }}: {{ review.comment }} ({{ review.rating }})</p>
+	{% endfor %}
+{% endblock %}
