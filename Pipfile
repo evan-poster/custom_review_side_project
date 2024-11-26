@@ -9,6 +9,7 @@ pymongo = "*"
 flask-sqlalchemy = "*"
 flask-pymongo = "*"
 python-dotenv = "*"
+django = "*"
 
 [dev-packages]
 
